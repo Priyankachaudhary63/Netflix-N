@@ -1,0 +1,93 @@
+body{
+    display: grid;
+    place-items: center;
+    background-color: black;
+    margin-top: 150px;
+}
+.frist{
+    height: 300px;
+    width: 150px;
+ 
+ position: absolute;
+}
+
+
+.frist span{
+    height: 0;
+    width: 50px;
+    background: brown;
+    position: absolute;
+}
+.box1{
+    top: 0;
+    bottom: 0;
+    animation: ring 2s linear forwards;
+}
+.box2{
+    left: 0;
+    top: 0;
+    transform: skewX(18.5deg);
+    transform-origin: top left;
+    animation: ring 1s linear forwards;
+
+}
+.box3{
+    right: 0;
+    bottom: 0;
+    animation: ring 1s linear forwards;
+
+
+}
+@keyframes ring{
+    100%{
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    display: grid;
+    place-items: center;
+}
+
+h1{
+     display: block;
+     position: relative;
+     width: 300px;
+     height: 300px;
+     /* color: yellow; */
+     /* animation-name: zoom-in;
+     animation-delay: .5s;
+     animation-duration: 3.5s;
+     animation-timing-function: ease-in;
+     animation-fill-mode: forwards;
+     background-size: 4000px;
+     &[letter="N"]{
+        transform-origin: 30% center;
+        .helper-1{
+            width: 19.5%;
+            height: 100%;
+            top: 0;
+            transform: rotate(180deg);
+            animation-name: fading-lumieres-box;
+
+        }
+     }
+}   */
